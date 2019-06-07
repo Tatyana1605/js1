@@ -7,6 +7,23 @@
   <title>Document</title>
 </head>
 <body>
-  <script src="js/style3.js"></script>
+  <script >
+    let a = prompt("Введите число: ");
+    let b = prompt("Введите число: ");
+    if (a>=0 && b>=0) {
+      let x = a-b;
+      console.log(x);
+    } else if (a<0 && b<0) {
+      let x = a*b;
+      console.log(x);
+    } else if (a>0 && b<0){
+      let x = a+b;
+      console.log(x);
+    } else if (a<0 && b>0){
+      let x = a+b;
+      console.log(x); 
+    }  
+    // при операции сложения не выходит их сумма, не поняла почему( все остальные арифметические операции выполняются 
+  </script>
 </body>
 </html>

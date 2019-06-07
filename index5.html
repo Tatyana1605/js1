@@ -8,7 +8,6 @@
 </head>
 <body>
   <script>
-     
 
     function summ(a,b) {
       return a + b;
@@ -22,7 +21,20 @@
     function division(a,b) {
       return a / b;
     };
-     
+    function mathOperation(arg1, arg2, operation) {
+      switch (operation) {
+        case "+":
+            return summ(arg1, arg2);
+        case "-":
+            return minus(arg1, arg2);
+        case "*":
+            return multiplication(arg1, arg2);
+        case "/":
+            return division(arg1, arg2);
+        default:
+            throw Error("Операция " + operation + " не предусмотрена");
+    }
+    }
   </script>
 </body>
 </html>
