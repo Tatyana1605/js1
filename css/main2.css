@@ -29,3 +29,7 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
+.imgHidden {
+  display: none;
+}
