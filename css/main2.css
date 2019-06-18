@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+
+}
+
+.text {
+  position: absolute;
+  display: none;
+  margin-top: 35px;
+
+   
+  
+  width: 200px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+}

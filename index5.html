@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main5.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="" name="form" >
+      <h1>Введите ваши данные</h1>
+      <label for="" class="label"> Введите ваше имя
+        <input type="text" name="name" value="  " id="name" class="input">
+        <div class="mistake">
+          Имя - должно содержать как минимум 1 символ, не более 50 символов.
+        </div>
+      </label>
+      <label for="" class="label"> Введите ваш номер телефона
+        <input type="text" name="phone" value=" " id="phone" class="input">
+        <div class="mistake">
+          Телефон - должно содержать 11 цифр, не больше, не меньше.
+        </div>
+      </label>
+      <label for="" class="label"> Введите пароль
+        <input type=" password" name=" password" value="" class="input">
+        <div class="mistake">
+          Пароль - минимум 5 символов, максимум 50.
+        </div>
+      </label>
+      <label for="" class="label"> Повторите пароль
+        <input type=" password" name=" password" value="" class="input">
+        <div class="mistake">
+          Повтор пароля - значение должно совпадать с полем пароль.
+        </div>
+      </label>
+      <button class="send">Отправить</button>
+    </form>
+
+  </div>
+  
+  <script src="js/app5.js"></script>
+</body>
+</html>
