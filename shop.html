@@ -25,18 +25,18 @@
           <a class="nav-link  " href="#">Контакты</a>
         </li>
       </ul>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="basket">
+        <button class="btn btn-danger  btnBasket" type="button"  >
           Корзина
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class=" menu menuHidden "  >
           <table class = "table">
             <thead>
                 <tr class = "tableHeader">
-                    <td>№</td>
+                    <td>ID</td>
                     <td>Название</td>
                     <td>Цена</td>
-                    <td>Количество</td>
+                    <td>Кол-во</td>
                     <td></td>
                 </tr>
             </thead>
@@ -44,8 +44,8 @@
             <tfoot>
                 <tr class="rowSum">
                     <td class="summary">Итого:</td>
-                    <td class="totalSum"></td>
-                    <td></td>
+                    <td class="totalSum">  </td>
+                    <td>&#8381;</td>
                     <td></td>
                 </tr>
             </tfoot>
@@ -58,33 +58,42 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm" data-id="1">
         <h2 class="name">Товар 1</h2>
         <img src="img/1.jpg" alt="" height="250px" width="250px">
         <div class="price">
           200 &#8381;
         </div>
-        <button type="button" class="btn btn-danger btnBuy" data-id="1">
+        <button type="button" class="btn btn-danger btnBuy" 
+        data-id="1"
+        data-price="200"
+        data-name="Товар 1 ">
           Добавить в корзину
         </button>
       </div>
-      <div class="col-sm">
+      <div class="col-sm" data-id="2">
         <h2 class="name">Товар 2</h2>
         <img src="img/2.jpg" alt="" height="250px" width="250px">
         <div class="price">
-          200 &#8381;
+          300 &#8381;
         </div>
-        <button type="button" class="btn btn-danger btnBuy" data-id="2">
+        <button type="button" class="btn btn-danger btnBuy"
+         data-id="2"
+         data-price="300"
+         data-name="Товар 2">
           Добавить в корзину
         </button>
       </div>
-      <div class="col-sm">
+      <div class="col-sm" data-id="3">
         <h2 class="name">Товар 3</h2>
         <img src="img/3.jpg" alt="" height="250px" width="250px">
         <div class="price">
-          200 &#8381;  
+          500 &#8381;  
         </div>
-        <button type="button" class="btn btn-danger btnBuy " data-id="3">
+        <button type="button" class="btn btn-danger btnBuy " 
+        data-id="3"
+        data-price="500"
+        data-name="Товар 3">
           Добавить в корзину
         </button>
       </div>
